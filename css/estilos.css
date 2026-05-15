@@ -1,0 +1,72 @@
+body {
+	background-image: url("../img/fondo.png"); 
+} 
+
+#contenedor {
+    background-color: rgba(227, 228, 229, 0.90); /* El color que elegiste */
+    min-height: 100vh;         /* Ocupa el 100% de la altura de la ventana */
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 25px;
+}
+
+header {
+    background-color: rgba(211, 211, 211, 0.75);
+    display: flex;
+    align-items: center;
+    
+    /* Definimos el ancho del contenido */
+    width: 80%;           /* Ocupa el 80% de la pantalla */
+    max-width: 1200px;    /* No se estira más de 1200px */
+    
+    /* Centra el bloque entero en la pantalla */
+    margin: 0 auto;
+
+    padding: 15px 0;      /* Espacio arriba y abajo */
+    padding-left: 80px;  /* Separa el h6 del borde izquierdo */
+    padding-right: 80px; /* Separa Contacto del borde derecho */
+
+
+}
+
+header h6 {
+    margin: 0;                 
+}
+
+header h6 a {
+    text-decoration: none;     
+    color: black;              
+    font-size: 1.4rem;
+}
+
+nav {
+    margin-left: auto;         /* Pushea todo el nav hacia la derecha */
+}
+
+nav ul {
+    display: flex;             /* Pone los links en horizontal (forma de bloque) */
+    list-style: none;          
+    margin: 0;
+    padding: 0;
+    gap: 40px;                 /* Espaciado entre cada link */
+}
+
+/* Estilo para los links de la derecha */
+nav ul li a {
+    text-decoration: none;     
+    color: #333;
+    font-weight: 500;
+}
+
+.menu {font-family: "Lato", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+
+h1, h2 {
+	font-family: "Lato", sans-serif;
+  	font-weight: 400;
+  	font-style: normal;
+}
