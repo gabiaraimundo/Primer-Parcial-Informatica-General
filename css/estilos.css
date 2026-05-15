@@ -9,6 +9,8 @@ body {
     margin: 0 auto;
     padding-top: 25px;
     padding-bottom: 25px;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Aplicamos Abel a los títulos */
@@ -137,21 +139,12 @@ nav ul li a em.menu {
 
 .principal {
 
-    /* Dimensiones alineadas con tu header */
-    width: 80%;                   
-    max-width: 1200px;
-    margin: 40px auto 0 auto;     
-    
-
-
     background-color: rgba(211, 211, 211, 0.75);
     width: 80%;           
     max-width: 1200px;    
-    margin: 0 auto;
-
-    padding: 15px 0;      
-    padding-left: 80px;  
-    padding-right: 80px; 
+    margin: 0 auto 40px auto; /* Centrado y con separación hacia abajo */
+    padding: 30px 80px;      
+    box-sizing: border-box;
     }
 
 .principal h3  {
@@ -174,7 +167,7 @@ nav ul li a em.menu {
 
     width: 80%;                   
     max-width: 1200px;
-    margin: 40px auto 40px auto;     
+    margin: 0px auto 40px auto;     
     padding: 0px;
     box-sizing: border-box;       
     text-align: center;    
@@ -196,7 +189,7 @@ nav ul li a em.menu {
     /* Copiamos las dimensiones exactas de tu header */
     width: 80%;           
     max-width: 1200px;    
-    margin: 60px auto 25px auto; /* 60px para despegarlo del video y centrado */
+    margin: auto auto 25px auto; 
 
     /* Los mismos paddings exactos del header para que las puntas coincidan */
     padding: 15px 0;      
@@ -261,4 +254,60 @@ nav ul li a em.menu {
     color: #ff3b30;
     text-decoration: underline;
 }
+
+/*medidas del contenedor y tipografia y color de h3 y p*/
+#sobre {
+
+    background-color: rgba(211, 211, 211, 0.75);
+    width: 80%;           
+    max-width: 1200px;    
+    margin: 40px auto 0px auto; /* Centrado y con separación hacia abajo */
+    padding: 30px 80px;      
+    box-sizing: border-box;
+    }
+
+#sobre h3  {
+
+    font-family: "Abel", sans-serif; 
+    font-size: 1.5rem;
+    text-decoration: none;     
+    color: #333;
+    font-weight: 600;
+}
+
+#sobre p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.espacio article {margin-top: 40px;}
+
+
+.foto {
+    background-color: rgba(211, 211, 211, 0.75); /* El mismo fondo gris */
+    width: 80%;           
+    max-width: 1200px;    
+    margin: 0px auto 40px auto;    /* Centrado y con separación arriba y abajo */
+    
+    /* Le damos un padding arriba y abajo para que respire, 
+       pero 0 a los costados para que la foto llene la caja gris */
+    padding: 30px 0;      
+    box-sizing: border-box; 
+    
+    /* Centramos la imagen si es que llega a ser más chica que el contenedor */
+    text-align: center; 
+}
+
+/* CONTROL DE LA IMAGEN: Evita que la foto se desborde */
+.foto img {
+    width: 100%;          /* Obliga a la foto a estirarse hasta el ancho del div */
+    max-width: 1040px;    /* 1200px (max) menos los 160px que simulan el aire de los textos */
+    height: auto;         /* Mantiene la proporción original para que no se safe ni se achate */
+    display: block;       /* Quita un espacio en blanco fantasma que los navegadores ponen abajo de las imágenes */
+    margin: 0 auto;       /* Centra la imagen adentro del bloque gris */
+}
+
+
 
