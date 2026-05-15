@@ -8,6 +8,7 @@ body {
     width: 95%;
     margin: 0 auto;
     padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 /* Aplicamos Abel a los títulos */
@@ -64,11 +65,24 @@ nav ul {
     gap: 40px;                 
 }
 
+nav ul li a:hover em.menu {
+    color: #ff3b30;          /* Cambia el texto a un color rojo/destacado (podés usar el que quieras) */
+    text-decoration: underline; /* Le agrega un subrayado sutil al pasar el mouse */
+    transition: color 0.3s ease; /* Hace que el cambio de color sea suave y no un golpe seco */
+}
+
+/* Agregamos la transición también al estado normal para que cuando saques el mouse vuelva suave */
+nav ul li a em.menu {
+    font-style: normal; 
+    transition: color 0.3s ease; 
+}
+
 nav ul li a {
     font-family: "Abel", sans-serif; 
     text-decoration: none;     
     color: #333;
     font-weight: 400;
+
 }
 
 nav ul li a em.menu {
@@ -89,7 +103,7 @@ nav ul li a em.menu {
     /* Dimensiones alineadas con tu header */
     width: 80%;                   
     max-width: 1200px;
-    margin: 40px auto 0 auto;     /* 40px de espacio abajo del header */
+    margin: 40px auto 40px auto;     /* 40px de espacio abajo del header */
     min-height: 500px;            /* Alto para que luzca la imagen */
     
     /* Flexbox para centrar H1 y H2 horizontal y verticalmente */
@@ -117,4 +131,58 @@ nav ul li a em.menu {
     font-style: italic;           
     margin: 0;
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+
+.principal {
+
+    /* Dimensiones alineadas con tu header */
+    width: 80%;                   
+    max-width: 1200px;
+    margin: 40px auto 0 auto;     
+    
+
+
+    background-color: rgba(211, 211, 211, 0.75);
+    width: 80%;           
+    max-width: 1200px;    
+    margin: 0 auto;
+
+    padding: 15px 0;      
+    padding-left: 80px;  
+    padding-right: 80px; 
+    }
+
+.principal h3  {
+
+    font-family: "Abel", sans-serif; 
+    font-size: 1.5rem;
+    text-decoration: none;     
+    color: #333;
+    font-weight: 600;
+}
+
+.principal p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.multimedia {
+
+    width: 80%;                   
+    max-width: 1200px;
+    margin: 40px auto 40px auto;     
+    padding: 0px;
+    box-sizing: border-box;       
+    text-align: center;    
+}
+
+.multimedia h3 { 
+    font-family: "Abel", sans-serif; 
+    font-size: 2rem;
+    text-decoration: none;     
+    color: #333;
+    font-weight: 600;
 }
