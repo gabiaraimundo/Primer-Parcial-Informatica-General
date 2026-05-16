@@ -310,4 +310,78 @@ nav ul li a em.menu {
 }
 
 
+/*galeria de obras */
+.obras {
+    background-color: rgba(211, 211, 211, 0.75); /* El mismo gris de tus cajas */
+    width: 80%;           
+    max-width: 1200px;    
+    margin: 40px auto 0px auto; /* Centrado y separado de lo que venga abajo */
+    padding: 40px 80px;       /* El mismo aire del header a los costados */
+    box-sizing: border-box;
+}
+
+/* Título de la sección */
+.obras h3 {
+    font-family: "Abel", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 30px;
+    text-align: left; /* Alineado con tus otros títulos */
+}
+
+/* Contenedor Flexbox de las tarjetas */
+.obras ul {
+    display: flex;
+    flex-wrap: wrap;       /* Si no entran en una fila, saltan abajo automáticamente */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 30px;             /* Separación pareja entre tarjetas */
+}
+
+/* Cada tarjeta individual (Calculamos el espacio para que entren 3 por fila) */
+.obras ul li {
+    /* El cálculo resta el gap para que queden 3 columnas perfectas */
+    width: calc((100% - 60px) / 3); 
+    background-color: rgba(255, 255, 255, 0.5); /* Un fondo blanco sutil para destacar la tarjeta */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+
+/* Contenedor interno de la foto */
+.obras .imagen-obra {
+    width: 100%;
+    height: 200px;         /* Altura fija para que todas las fotos midan igual */
+    overflow: hidden;      /* Corta lo que sobresalga si la foto es muy alta */
+    background-color: #000;
+}
+
+.obras .imagen-obra img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;     /* Truco clave: encaja la foto sin deformarla ni estirarla */
+    
+}
+
+
+/* Nombre de la obra abajo de su foto */
+.obras h4 {
+    font-family: "Abel", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #111;
+    margin: 0;
+    padding: 15px;         /* Espacio interno para que el texto no toque los bordes de la tarjeta */
+    text-align: center;
+    background-color: rgba(227, 228, 229, 0.4);
+}
+
+
+
+
 
